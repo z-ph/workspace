@@ -18,7 +18,7 @@ class BMIAnalyzer:
         """初始化分析器，加载数据"""
         self.file_path = file_path
         self.data = None
-        self.output_dir = "c:\\Users\\30513\\Desktop\\workspace\\result\\bmi_y_chromosome_analysis"
+        self.output_dir = "result\\bmi_y_chromosome_analysis"
         os.makedirs(self.output_dir, exist_ok=True)
     
     def load_data(self):
@@ -556,7 +556,7 @@ class BMIAnalyzer:
 
 # 主函数
 if __name__ == "__main__":
-    file_path = "c:\\Users\\30513\\Desktop\\workspace\\data\\附件_男胎检测数据_10_25.csv"
+    file_path = "data\\附件_男胎检测数据_10_25.csv"
     analyzer = BMIAnalyzer(file_path)
     report_path = analyzer.generate_md_report()
     print(f"分析报告已生成：{report_path}")
