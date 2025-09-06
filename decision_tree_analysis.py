@@ -62,8 +62,8 @@ def load_and_preprocess_data(file_path):
                 df[col] = pd.to_numeric(df[col], errors='coerce')
         
         # 使用前五个重要特征（根据之前分析的结果）
-        # X染色体浓度、孕妇BMI、13号染色体GC含量、21号染色体的Z值、X染色体的Z值
-        feature_columns = ['X染色体浓度', '孕妇BMI', '13号染色体的GC含量', '21号染色体的Z值', 'X染色体的Z值']
+        # X染色体浓度、孕妇BMI、13号染色体的GC含量、检测孕周、体重
+        feature_columns = ['X染色体浓度', '孕妇BMI', '13号染色体的GC含量', '检测孕周', '体重']
         
         # 检查特征列是否存在，不存在的列使用空值填充
         for col in feature_columns:
