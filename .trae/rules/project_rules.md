@@ -6,3 +6,4 @@
 plt.rcParams["font.family"] = ["SimHei"]
 plt.rcParams["axes.unicode_minus"] = False
 4. 所有输出的文件都要放在result文件夹下新建一个文件夹，文件夹的名字要和执行脚本的内容相关
+5. 使用基于当前工作区的路径，避免使用绝对路径
