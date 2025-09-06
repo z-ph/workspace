@@ -7,3 +7,6 @@ plt.rcParams["font.family"] = ["SimHei"]
 plt.rcParams["axes.unicode_minus"] = False
 4. 所有输出的文件都要放在result文件夹下新建一个文件夹，文件夹的名字要和执行脚本的内容相关
 5. 使用基于当前工作区的路径，避免使用绝对路径
+6. 相关结果输出为一个总结的md文档
+7. 如果输出的字符串包含转移字符的,建议使用raw字符串,例如:
+print(r"hello\nworld")
